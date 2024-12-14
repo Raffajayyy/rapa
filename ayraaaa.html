@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IK HOU VAN JE</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, pink, white);
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+        }
+        nav li {
+            margin: 10px;
+        }
+        nav li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 15px;
+            background-color: #ffd1dc;
+        }
+        nav li a:hover {
+            background-color: #ffb6c1;
+        }
+        .content-box {
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #fff;
+            display: none;
+        }
+        .content-box.visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(section) {
+            document.querySelectorAll('.content-box').forEach(box => box.classList.remove('visible'));
+            document.getElementById(section).classList.add('visible');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showContent('my-word')">My word</a></li>
+            <li><a href="#" onclick="showContent('my-treasure')">My Treasure</a></li>
+        </ul>
+    </nav>
+
+    <div id="my-word" class="content-box">
+        <h2>Happy mmm-bukan anniversary sih...</h2>
+        <p>i just wanna say a big thanks to you. ur amazing, and i’m really grateful for everything u do. seriously, i love you forever. words can’t even start to show how much u mean to me. ur my everything, and i hope u feel that every single day.
+            i'm really sorry for being so busy lately. i know it felt like i wasn’t around as much as i should have been. life just got a bit overwhelming, and i had to handle some stuff. but u were always on my mind, and i missed u like i was far from you around a year.
+            Hepi 14an sengkukkkk, walaupun ini bukan anniversary kita setaun dua taun atau tiga taun, aku tetep ngerasa hari ini spesial, and i'm so excited to celebrate it with u. every moment with u has been awesome, and i can’t wait for all the fun times ahead.
+            i remember the first time we met, how nervous i was and how instantly u made me feel at ease. since then, every day with u has been a gift. ur laugh, ur kindness, ur love they all make my life so much better. u've stood by me through thick and thin, and i can't thank you enough for that. u're my star, and i'm so lucky to have u in my life.
+            we've made so many great memories together, and there's so much more to come. from our little adventures to our quiet moments at home, every second with u is special. i love how we can be silly together, how we can talk about anything and everything, and how we always support each other no matter what.
+            thanks for being patient with me, for understanding when things get hectic. i know it’s not easy, but ur support means the world to me. i promise to make more time for us, to be there for u like u've always been there for me.
+            </p>
+    </div>
+
+    <div id="my-treasure" class="content-box">
+        <h2>My Treasure</h2>
+        <img src="https://drive.google.com/uc?export=view&id=1IcLGzKjf3A45xe3iJcOEI-F3M6fvEari" style="border-radius: 15px; width: 35%;">
+        <p>Me (kanan) with my Treasure (kiri)</p>
+        <p>Initeh gambar nya eror gais, teken aja yang icon ditengah trus buka di tab baru.. makaasi</p>
+    </div>
+</body>
+</html>
